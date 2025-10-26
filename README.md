@@ -137,7 +137,7 @@ Uygulama Colab üzerinde çalıştırıldığında ngrok ile otomatik public lin
 
 🔗 Örnek link:
 
-https://undented-unfortunately-mirna.ngrok-free.dev/
+https://akilli-finans-asistani-vx7acdkkqqucaufeudmg4z.streamlit.app/
 
 🧰 Sorun Giderme
 
