@@ -90,16 +90,13 @@ print("🌍 Public link hazır:", public_url)
 
 
 Bu işlem sonunda size özel bir bağlantı üretilecektir
-örnek:
-https://undented-unfortunately-mirna.ngrok-free.dev
 
-📁 Proje Yapısı
-.
-├── Akilli_Finans_Asistani.ipynb   # Notebook dosyası (geliştirme süreci)
-├── app.py                         # Streamlit arayüz dosyası
-├── requirements.txt               # Gerekli bağımlılıklar
-├── finance_guide.txt              # Finansal bilgi rehberi
-└── README.md                      # Proje açıklama dosyası
+📁 Proje Yapısı  
+├── Akilli_Finans_Asistani.ipynb  # Geliştirme süreci  
+├── app.py                        # Streamlit web arayüz dosyası  
+├── requirements.txt              # Gerekli bağımlılıklar  
+├── README.md                     # Proje açıklama dosyası  
+
 
 💡 Nasıl Çalışır?
 
@@ -132,12 +129,30 @@ Arayüz: Streamlit
 
 🌐 Web Arayüzü & Demo
 
-Kullanıcı dostu arayüz Streamlit ile tasarlanmıştır.
-Uygulama Colab üzerinde çalıştırıldığında ngrok ile otomatik public link oluşturulur.
-
-🔗 Örnek link:
+Uygulamanın kullanıma hazır sürümü Streamlit Cloud üzerinde yayınlanmıştır.  
+Aşağıdaki bağlantı üzerinden doğrudan erişebilirsiniz:
 
 https://akilli-finans-asistani-vx7acdkkqqucaufeudmg4z.streamlit.app/
+
+
+
+
+## ⚠️ Önemli Notlar
+
+Bu proje, RAG (Retrieval-Augmented Generation) temelli bir yapay zekâ chatbot prototipidir.  
+Kullanılan model açık kaynaklı ve küçük boyutlu (`flan-t5-small`) bir modeldir.  
+Bu nedenle:
+
+- Türkçe doğal dil sorularını her zaman tam olarak anlayamayabilir,  
+- Bazı finansal kavramlarda hatalı veya eksik cevaplar üretebilir,  
+- Hesaplamalarda yuvarlama farkları olabilir.  
+
+Bu durum, projenin **kavramsal bir demo** olması ve **ücretsiz modellerin sınırlı kapasitesi** nedeniyle beklenen bir durumdur.  
+
+🔍 Gerçek dünya senaryosunda bu sistem,  
+daha güçlü bir LLM (örneğin Gemini veya GPT tabanlı bir model)  
+ve daha geniş finansal veri setiyle geliştirildiğinde çok daha doğru sonuçlar verebilir.
+
 
 🧰 Sorun Giderme
 
@@ -145,9 +160,6 @@ https://akilli-finans-asistani-vx7acdkkqqucaufeudmg4z.streamlit.app/
 
 pip install -r requirements.txt
 
-
-⚠️ Ngrok bağlantısı açılmıyorsa:
-Token’ınızı yeniden ekleyin ve hücreleri sırayla çalıştırın.
 ⚠️ Model yanıt vermiyorsa:
 google/mt5-small yerine google/flan-t5-small veya gemini-pro modellerini deneyin.
 
